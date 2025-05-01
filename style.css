@@ -1,0 +1,25 @@
+/* file created on april 30 2025 */
+img {
+    max-width: 100%;
+   }
+    
+  /*    add       global styles  follow apply listen 
+        dont waste time  */
+  * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+  }
+
+  /* add @ font face font  compatible 
+  font */
+  @font-face {
+    font-family: "fontname"; 
+    src: url(/fonts/some-fontname.ttf);
+  }
+
+    /* mobile size is about 400 */
+  /* set to 62.5 percent , for related reason  */
+html {
+font-size: 62.50% 
+}

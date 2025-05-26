@@ -1,25 +1,227 @@
-/* file created on april 30 2025 */
+/* web developer css style may 26/ 25 edit  */
+/* Selector {}
+     property : value; */
+     /* add a background image       */
+     /* color: #101010;  black     color: beige; 
+     */ 
+     body {
+        background-image: url(gallery/img/bg-largeimage.jpg) ;
+        background-size: 1px;
+        font-family: "Ribik", sans-serif;
+       margin: 0;
+     }
+/*
+.ancizar-serif {
+  font-family: "Ancizar Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} 
+  */
+
+  /* img should be on right side of page  for 
+  top presentation  reason */
+
+  nav {
+    padding: 5px;
+  }
 img {
-    max-width: 100%;
-   }
-    
-  /*    add       global styles  follow apply listen 
-        dont waste time  */
-  * {
-     margin: 0;
-     padding: 0;
-     box-sizing: border-box;
-  }
-
-  /* add @ font face font  compatible 
-  font */
-  @font-face {
-    font-family: "fontname"; 
-    src: url(/fonts/some-fontname.ttf);
-  }
-
-    /* mobile size is about 400 */
-  /* set to 62.5 percent , for related reason  */
-html {
-font-size: 62.50% 
+  width: 450px;
+  height: 350px;
+  margin: 20px;
+	transition: all 1s;
 }
+
+img:hover {
+ 	transform: scale(1.1);
+}
+
+     h2, h1 {
+      text-align: center;
+        color: #61050C;       
+        cursor: pointer;
+     }
+
+  /*  h1 style top */
+     .head1-style {
+      font-size: 3em;
+      border-bottom: 2px solid rgba(0, 128, 0, 0.2);
+      width: 500px;
+      height: 100px;
+      text-align: center;
+      -moz-box-shadow:4px 4px 5px #888888;
+	   -ms-box-shadow: 4px 4px 5px #888888;
+	   -webkit-box-shadow: 4px 4px 5px #888888;
+	   -o-box-shadow: 4px 4px 5px #888888;
+	   box-shadow: 4px 4px 5px #888888;
+	    margin-top: 10px;
+      margin-bottom: 2px;
+     }
+
+     /* no margin  */
+  .space-mstyle {
+     margin: 0;
+  }
+     /* flex info */
+     .img-contain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+     }
+
+   /*  the next p tag with get the value not 
+   this one, from the cascade effect */
+     p {
+      color: pink; 
+     }
+ 
+    p {
+      cursor: pointer;
+      text-align: center;
+      color: #101010;
+    line-height: 26px;
+    font-size: .95rem; 
+     font-family: "Ribik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    }
+
+    /*  span transition */
+    span {
+      font-size: 1.9rem;
+    }
+/* container top do 1s  */
+.wrap {
+  margin: 10px;
+}
+.tran-container {
+display: inline-block;
+width: 50px;
+ border-radius: 50%;
+  height: 40px;
+}
+
+/*   .tr-con1   ,  trcon2  is needed  */
+
+    .tr-con2 {
+  border-radius: 10%;
+  height: 15px;
+  margin: 20px auto;
+  width: 40px;
+  padding: 5px;
+  .wrap:hover & {
+    transform: scale(2);
+  }
+}
+
+.tr-con1 {
+  background: #f8f8f8;
+  transition: all 1s;
+}
+
+/* above transitions example */
+
+    .text-edit1 {
+      font-style: italic;
+     font-weight: bold;
+     text-decoration: line-through;
+    }
+
+    .text-edit2 {
+      font-weight: 200;
+      text-transform: uppercase;
+    }
+   
+  h2 {
+    font-size: 35px;
+  }
+
+    ul {
+      text-align: right;
+    }
+  /* change to inline-block , use display propery */
+    li {
+    padding: 4px 10px;
+      list-style: none;
+     display: inline-block;
+    }
+/* paragraph with text */
+    .webtext {
+     padding-top: .5rem;
+     padding-bottom: .2rem;
+     margin-bottom: 0rem;
+     margin-top: .5rem;
+     margin-left: 1rem;
+     margin-right: 1rem;
+    }
+
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+   }
+
+    .active {
+      color: #101010;
+      font-size: 1.2rem;
+    }
+
+    /* hero-sect */
+    .hero-sect {
+      min-height : 90vh;
+      width: 95%;
+      margin: 0 0 0 auto;
+      display: flex;
+      flex: wrap;
+    }
+
+    .hero-intro {
+      background: white;
+      flex: 2 1 30rem;
+      text-align: center;
+    }
+/*  keep things  center in column */
+    .flex {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero-images {
+      flex: 1 1 30rem;
+      background: white;
+    }
+
+#div1 {
+ border: 2px solid rgba(0, 128, 0, 0.2);
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+   .top-img {
+  float: right;
+ }
+
+.div2-img {
+float: left;
+}
+
+/* .boxmodel { 
+  border: 2px solid rgba(0, 128, 0, 0.5);
+ display: inline-block;
+ padding: 5px 20px 5px 20px;
+ margin: 10px 10px; 
+ width: 100px;
+ height: 500px;
+
+} */
+
+/* clear  the float property  */
+footer {
+  text-align: center;
+  clear: both;
+}
+
+

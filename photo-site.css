@@ -1,0 +1,490 @@
+/* 
+   photography web site  / put hash sign
+    Selectors -  do all tutorials NOW
+    fluid typography 
+    steps for creating web site  , go slow and write 
+    try to  write everything down 
+    add add add write dowwn all comments are the 
+     p r o c e s s 
+ */
+
+ img {
+  max-width: 100%;
+ }
+  
+/*    add       global styles  follow apply listen 
+      dont waste time  */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+/* add @ font face font  compatible 
+font */
+@font-face {
+  font-family: "Ruhl"; 
+  src: url(/fonts/FrankRuhlLibre-Regular.ttf);
+}
+@font-face {
+  font-family: "Ruhl Medium"; 
+  src: url(/fonts/FrankRuhlLibre-Regular.ttf);
+}
+@font-face {
+  font-family: "Vibes"; 
+  src: url(/fonts/GreatVibes-Regular.ttf);
+}
+ 
+
+/* mobile size is about 400 */
+/* set to 62.5 percent , for related reason  */
+html {
+   font-size: 62.5%;
+   /* fluid typography  base number will grow according
+      */
+  --header1: calc(2rem + 1vw);
+  --header2: calc(3.5rem + 1vw);
+  --header3: calc(3rem + 1vw);
+  --header4: calc(2.4rem + 1vw);
+  --text: calc(1.8rem + 1vw);
+  --big: calc(6rem + 1vw);
+  --special-color: #906272;
+  --background-color: #414141;
+  --grey-text: #525252;
+}   
+
+
+h1 {
+  font-size: var(--header1);
+}
+/*       some global styles  */
+li, 
+button,
+ label, 
+ input, 
+ /* addd a link tag so size is larger */
+  /* text is 1.8rem size var --text */
+ a, 
+ p {
+  font-size: var(--text);
+}
+
+h2 {
+  font-size: var(--header2);
+}
+
+h3 {
+  font-size: var(--header3);
+}
+
+h4, 
+h5 {
+  font-size: var(--header4);
+}
+
+
+ul {
+  list-style: none;
+}
+/* add color black link color 
+edit color to grey default color is
+ black */
+a { 
+  text-decoration: none;
+  color: black;
+}
+ 
+/* center every;thing display flex; */
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* add custom font */ 
+body {
+  font-family: "Ruhl", sans-serif;
+}
+
+h1 {
+  font-family: "Vibes", sans-serif;
+}
+  
+/*      nav sect ion      */
+ /* add a box shadow */
+.main-head {
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* add a width 90 percent  margin auto
+add background  display flex , align-items  center,
+ min-height 10vh   */
+ /* add some padding to nav 2rem 0rem*/
+ /* add a box shadow */
+nav   {
+  width: 90%; 
+  margin: auto; 
+  display: flex;
+  align-items: center;
+  min-height: 10vh;
+  padding: 2rem 0rem;;
+} 
+
+
+/* logo  add this to nav also */
+/* flex 1 1 20rem puts space around */
+#logo { 
+  flex: 2 1 20rem;  
+}
+
+/* nav-link display flex, justify-content space around , 
+    */
+.nav-link {
+  display: flex;
+  justify-content: space-around;
+  flex: 1 1 20rem;
+}
+
+/* add some min-height; 90vh , width 95% , 
+add display flex, flex-wrap  wrap, 
+margin  0 0 0 auto , wil push content to 
+right some margin on left*/  
+.hero {
+  min-height: 90vh;  
+  width: 95%; 
+  margin: 0 0 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* add  space padding to tex , text-align -center 
+ */ 
+.hero-introduction {
+flex: 2 1 40rem;
+text-align: center;
+}
+ 
+/* edit , add color  */
+.hero-introduction p {
+padding: 5rem 10rem;
+color: var(--grey-text);
+}
+
+.hero-introduction h2 {
+  padding: 3rem;
+  }
+  .hero-introduction a {
+    padding: 2rem 8rem;
+    border: 3px solid black;
+    border-radius: 10px;
+    margin-bottom: 4rem;
+    } 
+
+
+/* Beatiful  - do you see a problem
+gradient top  */
+/* add padding space to image  
+   add a backgroun with linear gradient */
+.hero-images {
+  flex: 1 1 40rem;
+  background: linear-gradient(#dad8dd, #dad1d4);
+}
+
+/* add height , widthto image, add 
+object fit cover -will control image
+size while window resize */
+.hero-elena {
+  width: 100%;  
+ object-fit: cover;
+}
+
+/*       about section    */
+.about {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* add a background */
+.about-text {
+  color: white;
+  background: var(--background-color);
+  flex: 2 1 40rem;
+  /* adds space between  */
+justify-content: space-around;
+}
+/* add some spacing */
+.about-text div {
+  padding: 3rem 8rem;
+}
+
+.about-text h3 {
+padding: 2rem 0rem;
+font-family: "Ruhl Medium", sans-serif;
+}
+
+/* add custom font , some padding */
+.about-text h2 {
+font-family: "Vibes";
+padding: 4rem;
+}
+
+/* add position relative  */
+.about-image {
+  flex: 1 1 40rem;
+  position: relative; 
+}
+/* position text somewhere */
+.about-image h5 {
+   letter-spacing: 2rem;
+position: absolute;
+top: 20%;
+left: 50%;
+transform: translate(-50%, -20%);
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*  gallery section 4 images use
+grid for more complicated layout 
+grid-templat-columns repeat  3, 1fr */
+
+.gallery {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: repeat(3, 1fr);
+  position:  relative;
+}
+ 
+.gallery img  {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+ 
+.gallery1 {
+  grid-column: 1/3;
+}
+
+.gallery2 {
+  grid-column: 3/4;
+  grid-row: 1/3;
+}
+
+/* make text stand out againt images */
+.gallery-head {
+  position: absolute;
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  color: white; 
+  background: var(--background-color);
+  padding: 5rem 10rem;
+  text-align: center;
+}
+
+
+/*    contact  form section    */
+.contact {
+  min-height: 90vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-wrapper {
+flex: 3 1 40rem;
+}
+
+.form-wrapper h2 {
+  margin: 4rem 0rem;
+} 
+
+.form-wrapper h2 {
+font-size: var(--big);
+}
+
+.form-wrapper span {
+  font-size: var(--big);
+  color: var(--special-color);
+}
+
+.form-wrapper label {
+  display: block;
+}
+
+/* add a background  add white text input 
+for user add padding  1rem */ 
+.form-wrapper input{
+  display: block;
+  margin: 3rem 0rem;
+ background: var(--background-color);
+ color: white;
+ border: none; 
+ padding: 1rem;
+}
+
+.form-wrapper button {
+padding: 1rem 8rem;
+background: var(--special-color);
+color: white;
+border: none;
+width: 100%;
+}
+ 
+.contact img {
+flex: 1 1 40rem;
+}
+
+/*       footer section    */
+footer {
+background: var(--background-color);
+color: rgb(255, 255, 255);
+display: flex;
+padding: 3rem 5%;
+align-items: center;
+flex-wrap: wrap;
+}
+
+footer ul {
+  display: flex;
+  flex: 3 1 40rem;
+  justify-content: space-between;
+align-items: center;
+}
+
+footer h4 {
+  font-size: calc(1.4rem + 1vw);
+  flex: 3 1 40rem;
+}
+
+  /*
+    make everything moblie where  it applies */
+/*     burger menu   when it gets to mobile view 
+or when window collaspe  */
+@media screen and (max-width: 842px) {
+  .hero {
+    width: 100%;
+  }
+
+  .hero-introduction p {
+    padding: 5rem 3rem;
+  }
+
+  /* burger section menu - not working */
+  .burger {
+    /* makes things visible */
+    position: relative;
+  }
+  .burger span {
+    padding: 0.2rem 2rem;
+    background: var(--grey-text);
+    margin: 0.5rem 0rem;
+    display: block;
+  }
+.nav-link a {
+  color: white;
+  font-size: var(--header2);
+  text-decoration: underline;
+}
+
+  .nav-link {
+    background:var(--background-color);
+   width: 100%; 
+  height: 100%;
+   position: fixed;
+   top: 0;
+   left: 100%;
+   flex-direction: column;
+   align-items: center;
+   transition: transform 1s ease;
+ }
+  .menu-check {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translate(5%, -50%);
+    /* add some width and height */
+    width: 5rem;
+    height: 5rem;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 100%;
+  }
+  .menu-check:checked + .nav-link {
+    transform: translate(-100%);
+  }
+  .menu-check:checked ~ .burger span {
+  background: white;
+ }
+
+/* media query for about section
+reduce padding 8rem to 3rem   */
+ .about-text div {
+  padding: 3rem 3rem;
+ }
+/* gallery sectioin */
+.gallery img {
+  grid-row: auto;
+  grid-column: auto;
+}
+.gallery {
+  /* make images responsive , on top each other */
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+}
+.gallery-head {
+  display: none;
+}
+.contact img {
+  display: none; 
+}
+footer {
+order: 1;
+}
+footer h4 {
+order: 1;
+text-align: center;
+padding: 1rem;
+}
+} 
+
+/* adjust screen  font to width  */
+@media screen and (min-width: 1700px){
+  html {
+    --header1: 3rem;
+    --header2: 5rem;
+    --header3: 4rem;
+    --headeraa4: 2.8rem;
+    --text: 3rem;
+    --big: 8rem;
+  }
+}
+
+
+
+
+/*        button style    */ 
+button {
+  cursor: pointer;
+  margin: 1rem;
+  padding: 2rem 6rem;
+  color: #fff;
+  font-size: 2.6rem;
+  border-radius: 4px;
+  /* add delay to hover */
+  transition: background 0.5s ease-in-out;
+}
+
+button:hover {
+background: #4c6e97;
+}
+
+  /* type slower , with precision  Are we learning
+  anything ,yes we are. save time , just use 0 , thats all  when use
+  for px, rem, etc */
+
+
+

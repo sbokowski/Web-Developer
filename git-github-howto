@@ -1,0 +1,60 @@
+   Git help / commands / recommendation 
+
+           Crash course / git/ GitHub 
+Note ; using command Lin can be faster 
+  
+   Bogdan tutorial - 3.5  stars 
+
+   How long take to do course?
+    10am start 
+# 
+     
+    
+ #     ls -a.   -list hidden folder
+     Make new directory 
+ #.    mkdir filename
+ # 
+        Crea a new Git repository  
+#  initialize git  -
+#
+ #    git init
+
+#    remove directory.      
+ #      rm -r  fillename
+
+#.  make new  branch in git   
+ #
+#   example
+# git branch -m  git-repositoryy1
+#
+ #.    git branch -m
+#
+ #.  Default name of branch in git  master  
+#   
+#   Gti branch - list type current
+$    git branch
+# 
+#  Note  
+  When you git init you will be in directory while git is
+Running 
+
+#       git object types
+ 
+       Different git objext types 
+     2 main objects types   
+        1. Files 
+         2. Folders 
+
+       Blob    /  represent fles , files files files
+
+       Tree   /  represent folder or directories folders or directories
+
+       Commit   /.  pointers to specific trees  pointer to specific trees
+           -you can create different commits 
+
+        Annotated tag  /  Annotated tags are stored as full objects 
+      in the Git database. To reiterate, They store extra meta data 
+        such as: the tagger name, email, and date. Similar to commits
+        and commit messages Annotated tags have a tagging message.
+
+   #          Hashes of the Git objects 

@@ -1,9 +1,18 @@
+Today June 20 2025 
+“What am I solving today that matters?”
+
+  
+Schedule learning time 
+Learning a little each day adds up. Research shows that students who make learning a habit are more likely to reach their goals. Set time aside to learn and get reminders using your learning scheduler.
+
+
+
    Git help / commands / recommendation 
 
-           Crash course / git/ GitHub 
+           Crash course / git/ GitHub  
 Note ; using command Lin can be faster 
   
-   Bogdan tutorial - 3.5  stars 
+   Bogdan tutorial - 3 stars 
 
    How long take to do course?
     10am start 
@@ -19,8 +28,14 @@ Note ; using command Lin can be faster
 #
  #    git init
 
-#    remove directory.      
+#       remove directory.      
  #      rm -r  fillename
+#     
+
+#    
+              Make a file 
+#.        
+ #         echo first > 1.text
 
 #.  make new  branch in git   
  #
@@ -32,11 +47,27 @@ Note ; using command Lin can be faster
  #.  Default name of branch in git  master  
 #   
 #   Gti branch - list type current
-$    git branch
+
+# list status of git 
+     will. Show branch and information 
+
+#      git status         
+ 
+#     git branch
 # 
+#        Git , list objects in file /folers in git repository
+       Object folder 
+
+#     ls  .git/objects  
+   
 #  Note  
   When you git init you will be in directory while git is
-Running 
+Running  
+             Clear screen , 
+
+  #       clear or cmd +. K
+
+#       clear  - command to clear make room. 
 
 #       git object types
  
@@ -58,3 +89,107 @@ Running
         and commit messages Annotated tags have a tagging message.
 
    #          Hashes of the Git objects 
+  
+              Hash is create using specific hash function namely sha
+     hash function and hash functions create 
+
+                 Variable length  input 
+                            
+                Any variable length input
+
+                  Hash function 
+
+              C210aasdadsfpoumg8gn bld037576tghgbniyu
+
+                 Fixed length hash  ( see above )
+
+               Hexadecimal 16 characters (12345 , ABCCD )
+               
+               Decimal 10 characters (0.1234565)
+    
+                 Binary 2 characters (0, 1)
+
+                       
+                                            SHA 1
+                
+             	              	        160 bits
+
+                                  40 hexadecimal  characters
+
+    			  c325fd085 c325fd085 c325fd085 c325fd085
+
+    Now , lets’ proceed and lets create first file in our Git  repository
+      It our working direectory folder 
+                                    
+
+          In Git there are 3 areas  in Git 
+
+         1        Working directory 
+
+         2   	Staging area / index
+
+        3 	      Git repository 
+
+
+            And there is a sub folder called objects you could use tab
+       In order to autocomplete this path 
+
+ 
+         Most common operations 
+
+         Stage
+ #      git add  
+
+      Commit 
+ #      git commit 
+
+     Jump into certain version of the project
+#.     git checkout
+      
+ 
+    Lets getting started  , clear screen  or cmmd k
+
+   #                 git add filename.txt
+
+      Use git add to add file to stain are 
+
+    #              git status 
+
+      Now enter git status , now there are changing are
+    Some changes to be committed and that means 
+
+  #               git commit -m  “message about commit” 
+   
+   Now we could use git commit command in order to 
+   Commit changes 
+
+      Note commit has a shasum hash assign to it
+    Has an id to 
+                          
+               8a31fb commit 
+
+              Author name / email / 
+              commit desciption
+               Parent 
+
+       Every commit has author name and email , and works 
+     Git works locally. On your computer         
+
+     User name and email config  command 
+
+   #     git config —list 
+
+ #  already set up username and email 
+           
+#         Git commit. Command
+
+     Now lets go ahead and commit the changes by using cmmd
+  Git  commit and this will commit. The changes 
+
+  # git status        - will show status file  - may say new file.txt
+ #    -m  means message  must add a message in quotes double
+# quotes.  
+#       git commit -m “another awesome commit” 
+
+# Git will say of changes made. In commit  1 file changes and 
+# name of file and changes 

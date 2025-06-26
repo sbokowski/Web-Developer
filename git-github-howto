@@ -1,6 +1,16 @@
 Today June 20 2025 
 “What am I solving today that matters?”
 
+Today june 26 2025
+Edit file and send from local repository to remote Github 
+
+ Add a file to GitHub: 
+   Edit file , save changes
+# git add .
+# git commit -m "message about commit"
+# git remote -v
+# git push -u origin main
+
   
 Schedule learning time 
 Learning a little each day adds up. Research shows that students who make learning a habit are more likely to reach their goals. Set time aside to learn and get reminders using your learning scheduler.
